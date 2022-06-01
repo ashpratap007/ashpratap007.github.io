@@ -16,8 +16,8 @@ body {
     transform: translate3d(0, 0, 0);
     position: relative;
     width: 25%;
-    height: 100vh;
-    min-height: 600px;
+    height: 60vh;
+    min-height: 500px;
     color: #fff;
     overflow: hidden;
     transition: width 0.5s ease;
@@ -44,7 +44,7 @@ body {
     transition: opacity 0.5s ease, transform 0.5s ease;
   }
   .tl-item:hover {
-    width: 30% !important;
+    width: 100% !important;
   }
   .tl-item:hover:after {
     opacity: 0;
@@ -56,7 +56,11 @@ body {
   }
   .tl-item:hover .tl-content {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(-50%);
+    transition: all 0.95s ease 0.65s;
+  }
+  .tl-item:hover .tl-year {
+    transform: translateX(-50%) translateY(-190%);
     transition: all 0.75s ease 0.5s;
   }
   .tl-item:hover .tl-bg {
@@ -72,10 +76,14 @@ body {
     top: 55%;
     opacity: 0;
   }
+  #main .tl-content b {
+    color: #1ca6ae;
+  }
+
   .tl-content h1 {
     font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
     text-transform: uppercase;
-    color: #1779cf;
+    color: #1779cf !important;
     font-size: 1.44rem;
     font-weight: normal;
   }
@@ -92,7 +100,8 @@ body {
   .tl-year p {
     font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 1.728rem;
-    line-height: 0;
+    line-height: 2;
+    margin: 0;
   }
   
   .tl-bg {
