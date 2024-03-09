@@ -32,6 +32,12 @@ table {
 	min-height: 300vh;
 }
 
+h5 {
+	margin: 4px;
+	font-style: italic;
+	color: #585858;
+}
+
 .container {
 	display: flex;
 }
